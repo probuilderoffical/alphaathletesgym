@@ -4,3 +4,44 @@
 @media(max-width:1000px){.container{max-width:100%;}.footer-main{grid-template-columns:1.5fr 1fr 1fr}.footer-contact{grid-column:1/-1;border-top:1px solid var(--line);padding-top:1.5rem}.site-nav{display:none;position:fixed;top:72px;left:0;right:0;height:calc(100vh - 72px);background:var(--black);padding:2rem;flex-direction:column;align-items:flex-start;font:800 2rem var(--font-head)}.site-nav.open{display:flex}.menu-toggle{display:block;margin-left:auto}.nav-cta{display:none}.hero-grid,.split,.contact-grid{grid-template-columns:1fr}.hero-visual{height:440px;min-height:0}.card-grid{grid-template-columns:repeat(2,1fr)}.why-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:640px){html,body{width:100%;max-width:100%;overflow-x:hidden}.container{width:calc(100% - 1.5rem);max-width:100%;padding:0;margin-inline:.75rem}.nav-wrap{width:100%;margin:0;padding-inline:.75rem}.section{width:100%;overflow:hidden}.section{padding:4.5rem 0}.site-header{height:64px}.site-nav{top:64px;height:calc(100vh - 64px)}html{scroll-padding-top:70px}.hero{min-height:auto;padding-top:3.5rem}.hero-grid{gap:2.5rem}.hero-visual{height:330px}.visual-label{left:.75rem;right:.75rem;bottom:.75rem}.visual-label small{font-size:.68rem}h1{font-size:clamp(2.8rem,13.5vw,4.25rem);overflow-wrap:anywhere}h2{font-size:clamp(2.25rem,10.5vw,3.35rem);overflow-wrap:anywhere}.hero-text{font-size:.98rem}.body-copy{font-size:1rem}.actions{display:grid}.actions .btn{width:100%}.section-head{display:block}.section-head>p{margin-top:1rem}.card-grid{grid-template-columns:1fr}.program-card{min-height:190px}.why-grid{grid-template-columns:1fr}.why-card{min-height:auto}.why-card .icon{margin-bottom:1.5rem}.membership-inner{display:block}.membership-inner .btn{margin-top:1.5rem;width:100%}.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:260px 180px 180px}.gallery-item:first-child{grid-column:span 2;grid-row:auto}.footer-main{grid-template-columns:1fr 1fr;gap:2.25rem 1.5rem}.footer-brand,.footer-contact{grid-column:1/-1}.footer-bottom{padding-bottom:4rem}.mobile-whatsapp{display:flex;position:fixed;z-index:90;left:.65rem;right:.65rem;bottom:.65rem;background:var(--red);color:#fff;min-height:48px;align-items:center;justify-content:space-between;padding:0 1rem;font-weight:900;text-transform:uppercase;box-shadow:0 8px 30px rgba(0,0,0,.4)}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
 img,svg,video,canvas{max-width:100%}@media(min-width:1001px){.hero-copy{min-width:0}.section-head>div{min-width:0}.site-footer .container{width:min(calc(100% - 3rem),var(--max))}}
+/* Responsive stability pass */
+html,body{min-width:0;width:100%;overflow-x:clip}
+main,header,footer,section,.container,.hero-grid,.split,.contact-grid,.section-head,.membership-inner{min-width:0;max-width:100%}
+.hero-copy,.body-copy,.program-card,.why-card,.contact-form,.footer-main>*{min-width:0}
+h1,h2,h3,p,a,span{overflow-wrap:break-word}
+@media (min-width:1001px) and (max-width:1180px){
+ .site-nav{gap:.75rem;font-size:.74rem}
+ .nav-wrap{gap:.8rem}
+ .btn-small{padding:.6rem .7rem;font-size:.72rem}
+ .hero-grid{grid-template-columns:minmax(0,1fr) minmax(300px,.82fr);gap:2rem}
+ h1{font-size:clamp(3.4rem,6vw,5.4rem)}
+ .card-grid{grid-template-columns:repeat(3,1fr)}
+}
+@media (max-width:1000px){
+ .site-header,.nav-wrap{max-width:100vw}
+ .hero-grid,.split,.contact-grid{width:100%;grid-template-columns:minmax(0,1fr)}
+ .hero-copy,.hero-visual{width:100%;max-width:100%}
+ .footer-main{grid-template-columns:1.3fr 1fr 1fr}
+}
+@media (max-width:760px){
+ .hero-grid{display:flex;flex-direction:column}
+ .hero-copy,.hero-visual{flex:0 0 auto}
+ .hero-visual{aspect-ratio:4/3;height:auto;min-height:0}
+ .card-grid{grid-template-columns:1fr}
+ .why-grid{grid-template-columns:1fr}
+ .contact-grid,.split{gap:2.5rem}
+ .footer-main{grid-template-columns:1fr 1fr}
+ .footer-brand,.footer-contact{grid-column:1/-1}
+}
+@media (max-width:420px){
+ .brand{font-size:.86rem}.brand-mark{width:30px;height:30px}
+ .container{width:calc(100% - 1.25rem);margin-inline:.625rem}
+ .nav-wrap{padding-inline:.625rem}
+ h1{font-size:clamp(2.55rem,13vw,3.35rem);line-height:.96}
+ h2{font-size:clamp(2.1rem,10vw,2.8rem);line-height:.98}
+ .gallery-grid{grid-template-columns:1fr;grid-template-rows:240px repeat(4,180px)}
+ .gallery-item:first-child{grid-column:auto}
+ .footer-main{grid-template-columns:1fr}
+ .footer-brand,.footer-contact{grid-column:auto}
+ .footer-bottom{flex-direction:column}
+}
