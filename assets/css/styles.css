@@ -129,3 +129,50 @@ body{overflow-x:hidden}
  .site-nav a:after{content:"";position:absolute;left:0;right:100%;bottom:-7px;height:2px;background:var(--red);transition:right .22s ease}
  .site-nav a:hover:after,.site-nav a:focus-visible:after{right:0}
 }
+
+/* Typography + safe heading inset pass */
+:root{
+ --font-head:"Oswald","Arial Narrow",sans-serif;
+ --font-body:"Manrope",Arial,sans-serif;
+ --red:#e63b43;
+ --red-dark:#bd2731;
+ --white:#f4f2ed;
+ --muted:#a9adb5;
+ --line:#2d323b;
+}
+body{font-family:var(--font-body);color:var(--white)}
+h1,h2,h3{font-family:var(--font-head);font-style:normal;letter-spacing:-.015em}
+h1{font-weight:700}
+h2{font-weight:600}
+h3{font-weight:600}
+.hero-copy,.section-head>div,.split>div:first-child,.membership-inner>div,.contact-grid>div:first-child{padding-left:clamp(.25rem,.65vw,.6rem)}
+.hero-copy h1,.section-head h2,.split h2,.membership-inner h2,.contact-grid h2{
+ margin-left:0;
+ transform:none;
+ text-indent:0;
+ padding-left:.02em;
+ max-width:100%;
+}
+.eyebrow{font-weight:700;letter-spacing:.14em}
+.hero{background:radial-gradient(circle at 72% 25%,rgba(230,59,67,.09),transparent 25rem),#090a0c}
+.section-programs{background:#101319}
+.section-panel{background:#181c23}
+.section-why{background:linear-gradient(120deg,#0d1015 0%,#171b22 100%)}
+.section-faq{background:#101319}
+.section-light{background:#eeeae3;color:#11151a}
+.section-light h2,.section-light h3{color:#11151a}
+.section-light .body-copy,.section-light .dark-copy{color:#454a52}
+.membership{background:#d93640}
+.contact-form{background:#151920}
+.site-footer{background:#08090b}
+.program-card:hover,.why-card:hover{border-color:#4a3035}
+.program-card .card-number,.why-card .icon{color:#ef4a52}
+@media(min-width:1001px){
+ .hero-copy,.section-head>div,.split>div:first-child,.membership-inner>div,.contact-grid>div:first-child{padding-left:clamp(.5rem,1vw,1rem)}
+ .hero-copy h1{font-size:clamp(3.5rem,5.45vw,5.45rem)}
+ h2{font-size:clamp(2.45rem,4vw,4rem)}
+}
+@media(max-width:640px){
+ .hero-copy,.section-head>div,.split>div:first-child,.membership-inner>div,.contact-grid>div:first-child{padding-left:.35rem;padding-right:.25rem}
+ h1,h2{max-width:calc(100vw - 2rem)}
+}
