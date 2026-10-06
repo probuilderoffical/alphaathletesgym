@@ -16,11 +16,11 @@ window.SITE_DATA={
     {title:"Accessible support",description:"Use WhatsApp to confirm membership, programs, timings and visit details.",icon:"+"}
   ],
   gallery:[
-    {label:"Replace with approved gym photo 01",src:""},
-    {label:"Replace with approved gym photo 02",src:""},
-    {label:"Replace with approved gym photo 03",src:""},
-    {label:"Replace with approved gym photo 04",src:""},
-    {label:"Replace with approved gym photo 05",src:""}
+    {label:"Strength training gym interior",src:"https://images.unsplash.com/photo-1778828494354-9b717d36dc99?auto=format&fit=crop&q=76&w=1200"},
+    {label:"Focused strength training",src:"https://images.unsplash.com/photo-1779457166313-f9dcd5f39f69?auto=format&fit=crop&q=76&w=900"},
+    {label:"Gym training environment",src:"https://images.unsplash.com/photo-1779457166289-00a133bd4943?auto=format&fit=crop&q=76&w=900"},
+    {label:"Performance training session",src:"https://images.unsplash.com/photo-1779457166269-8c345b3cc0fe?auto=format&fit=crop&q=76&w=900"},
+    {label:"Strength and conditioning",src:"https://images.unsplash.com/photo-1779457166317-ef75eb78c301?auto=format&fit=crop&q=76&w=900"}
   ],
   faq:[
     {q:"How do I join the gym?",a:"Message Alpha Athletes Gym on WhatsApp at +92 308 4929506 to ask for current membership details and next steps."},
